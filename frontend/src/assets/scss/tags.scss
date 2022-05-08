@@ -1,0 +1,25 @@
+.spoiler {
+    color: var(--theme_default_spoiler);
+    background-color: var(--theme_default_spoiler);
+}
+
+.spoiler:hover {
+    color: inherit;
+    background-color: transparent;
+}
+
+.unkfunc, .uncfunc{
+    color: var(--theme_default_postnum) !important;
+}
+
+.u{
+    text-decoration: underline;
+}
+
+.o{
+    text-decoration: overline;
+}
+
+.s{
+    text-decoration: line-through;
+}

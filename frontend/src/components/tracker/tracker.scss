@@ -1,0 +1,31 @@
+.tracker-panel {
+    position: relative;
+    min-width: 220px;
+    position: fixed;
+    bottom: 0;
+    right: 80px;
+    font-size: 0.85em;
+    background-color: var(--theme_default_postbg);
+    border: solid 1px var(--theme_default_border);
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    display: block;
+
+    &__header {
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    &__title {
+        padding: 6px;
+    }
+
+    &__refresh {
+        position: absolute;
+        right: -10px;
+        bottom: 5px;
+    }
+}

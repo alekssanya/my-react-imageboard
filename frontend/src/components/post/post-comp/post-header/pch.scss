@@ -1,0 +1,20 @@
+.post-common-header {
+    display: flex;
+
+    &__user {
+        margin-right: 5px;
+    }
+
+    &__time {
+        margin-right: 10px;
+
+        &-date {
+            margin-right: 5px;
+        }
+    }
+
+    &__post-id {
+        color: var(--theme_default_alttext);
+        margin-right: 10px;
+    }
+}

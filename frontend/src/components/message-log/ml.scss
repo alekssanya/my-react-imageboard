@@ -1,0 +1,11 @@
+.message-log{
+    position: fixed;
+    top: 4px;
+    right: 4px;
+    z-index: 998;
+    cursor: default;
+    font-size: 0.9em;
+    padding: 4px 8px;
+    background-color: var(--theme_default_postbg);
+    transition: all 0.2s ease;
+}

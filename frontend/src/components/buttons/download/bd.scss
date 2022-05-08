@@ -1,0 +1,25 @@
+.download {
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    .str1 {
+        stroke: #fefefe;
+        stroke-miterlimit: 22.9256;
+    }
+    .str0 {
+        stroke: #fefefe;
+        stroke-linecap: round;
+        stroke-miterlimit: 22.9256;
+    }
+    .fil1 {
+        fill: none;
+    }
+    .fil2 {
+        fill: #fefefe;
+    }
+    .fil0 {
+        fill: var(--theme_default_icon);
+    }
+}

@@ -1,0 +1,9 @@
+.post-common-images {
+    display: flex;
+    margin: 0 36px;
+    &__img {
+        max-width: 220px;
+        max-height: 220px;
+        aspect-ratio: attr(width) / attr(height);
+    }
+}
