@@ -1,0 +1,12 @@
+.mov-media-board {
+    z-index: 10000;
+    position: fixed;
+    padding: 8px 8px;
+    background-color: var(--theme_mpborder);
+
+    &__title {
+        text-align: center;
+        color: var(--theme_default_drag);
+        cursor: move;
+    }
+}

@@ -31,7 +31,7 @@ export const messageBoardState = createSlice({
 
         showMovMessageBoard: (state) => {
             state.movMessageBoardisOpen = true
-            state.messageBoardText = state.messageBoardText + ">>" + state.postId
+            state.messageBoardText = state.messageBoardText + ">>" + state.postId + "\r\n"
             sessionStorage.setItem("mesBoardText", state.messageBoardText)
         },
 

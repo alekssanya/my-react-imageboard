@@ -34,7 +34,8 @@ async function autocreator() {
             data: {
                 boardName: boardList[index]
             }
-        }).then(async (response) => {
+        })
+        .then(async (response) => {
             const resp = response.data
             for (let index = 0; index < 10; index++) {
                 for (let k = 0; k < resp.length; k++) {
@@ -51,7 +52,8 @@ async function autocreator() {
                             text: text,
                             IP: "123.123.123.123",
                             ThreadId: resp[k].id,
-                            boardName: resp[k].boardName
+                            boardName: resp[k].boardName,
+                            postTitle: text.slice(0, 51),
                         }
                     })
                 }

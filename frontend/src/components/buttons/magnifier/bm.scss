@@ -4,6 +4,7 @@
     image-rendering: optimizeQuality;
     fill-rule: evenodd;
     clip-rule: evenodd;
+    display: block;
     .str0 {
         stroke: #fefefe;
         stroke-miterlimit: 22.9256;
@@ -17,6 +18,6 @@
         fill: none;
     }
     .fil0 {
-        fill: #b3b3b3;
+        fill: var(--theme_default_icon);
     }
 }

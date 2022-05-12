@@ -3,12 +3,11 @@ import './boardmain.scss'
 import AppReq from '../../services/axios/app'
 import { useParams } from 'react-router-dom'
 import BoardMainThread from './board-main-thread/BoardMainThread'
-
+import AnswersCont from '../answers-cont/AnswersCont'
 const BoardMain = (() => {
-  let [isLoaded, setIsLoaded] = useState(false)
-  let [threads, setThreads] = useState()
-  let path = useParams()
-
+  const [isLoaded, setIsLoaded] = useState(false)
+  const [threads, setThreads] = useState()
+  const path = useParams()
 
   useEffect(() => {
     async function fetchData() {
@@ -28,7 +27,7 @@ const BoardMain = (() => {
         ))
         : <div>Loading...</div>
       }
-
+      <AnswersCont />
     </main>
   );
 })

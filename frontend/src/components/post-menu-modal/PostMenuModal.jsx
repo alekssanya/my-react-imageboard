@@ -12,7 +12,7 @@ function PostMenuModal() {
         <div style={{top: coor[0], left: coor[1]}} className="post-menu-modal">
             <button className="post-menu-modal__btn" onClick={() => disp(showMovMessageBoard())}>Ответить</button>
             <button className="post-menu-modal__btn" onClick={() => disp(hidePost(postId))}>Скрыть</button>
-            <button className="post-menu-modal__btn" onClick={() => console.log("Мамке своей пожалуйся")}>Зарепортить</button>
+            <button className="post-menu-modal__btn" onClick={() => alert("Мамке своей пожалуйся азаза")}>Зарепортить</button>
         </div>
     )
 }

@@ -14,7 +14,7 @@ function Post(props) {
     return (
         <div className='post'>
             {isHide[props.post.id]
-                ? <div className="board-main-oppost" onClick={() => disp(showPost(props.post.id))}>Скрытый пост №{props.post.id} ({props.post.text.slice(0, 51)})</div>
+                ? <div className="board-main-oppost" onClick={() => disp(showPost(props.post.id))}>Скрытый пост №{props.post.id} ({props.post.postTitle})</div>
                 : <>
                     <div className="post__header">
                         <PostCommonHeader createdat={props.post.createdAt} id={props.post.id} username={props.post.userName} />

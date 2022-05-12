@@ -24,6 +24,15 @@ class AppReq {
             console.log(error)
         }
     }
+
+    async getPost(id) {
+        try {
+            const post = await request("get", `posts/${id}`)
+            return post
+        } catch (error) {
+            console.log(error)
+        }
+    }
     
     async createPost(message) {
         try {

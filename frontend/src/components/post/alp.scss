@@ -1,0 +1,29 @@
+.answer-link-post-wr{
+    position: absolute;
+    .post::before{
+        content: none;
+    }
+    .post {
+        background-color: var(--theme_default_postbg);
+        border: 1px solid var(--theme_default_border);
+        border-radius: 3px;
+        max-width: 1024px;
+        margin: 0px;
+        padding-right: 10px;
+    
+        &__header {
+            display: flex;
+            align-items: center;
+            margin: 0 0 10px 5px;
+            color: var(--theme_default_alttext);
+            padding-top: 6px;
+        }
+    
+        &__btns{
+            button{
+                padding: 0;
+            }
+            margin-left: 5px;
+        }
+    }
+}

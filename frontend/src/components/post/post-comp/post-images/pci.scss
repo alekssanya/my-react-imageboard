@@ -2,8 +2,30 @@
     display: flex;
     margin: 0 36px;
     &__img {
+        cursor: pointer;
         max-width: 220px;
         max-height: 220px;
-        aspect-ratio: attr(width) / attr(height);
+    }
+
+    &__video {
+        cursor: pointer;
+        max-width: 220px;
+        max-height: 220px;
+        border: 1px dashed var(--theme_default_alttext);
+    }
+
+    &__img-wr{
+        .btn-magnifier + .btn-download {
+            margin-left: 4px;
+        }
+    }
+
+    &__title{
+        display: flex;
+        &-btns{
+            display: flex;
+            align-items: center;
+            margin-left: 4px;
+        }
     }
 }

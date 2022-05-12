@@ -49,15 +49,16 @@ class TextAnalizator {
     }
 
     #unkfunc(text) {
-        return text.replaceAll(/(?:^|\r\n|\n|\r)[^&gt;](&gt;.*)/g, (match) => `<span class="unkfunc">${match}</span>`)
+        return text.replaceAll(/(?:\r\n|\n|\r)(>[^>].+)/g, (match, elem1, elem2) => `${elem1}<span class="unkfunc">${elem2}</span>`)
     }
 
     #postLinks(text) {
         let answers = []
         return {
-            postLinkText: text.replaceAll(/(?:\s)(&gt;&gt;\d{1,10})/g, (match) => {
-                answers.push(match)
-                return `<a href="${match}">${match}</a>`
+            postLinkText: text.replaceAll(/(\s)*(?:&gt;&gt;)(\d{1,10})/g, (match, elem1, elem2) => {
+                answers.push(elem2)
+                console.log(match)
+                return `${elem1 || ""}<a class="answer-reference" data-num="${elem2}">>>${elem2}</a>`
             }),
             answers: answers
         }
@@ -68,6 +69,7 @@ class TextAnalizator {
         let postTitle = this.#tagsReplacerForTitle(text)
         let formedText = this.#screening(text)
         formedText = this.#unkfunc(formedText)
+        console.log(formedText)
         let {postLinkText, answers} = this.#postLinks(formedText)
         formedText = postLinkText
         formedText = this.#tagsReplacer(formedText)
