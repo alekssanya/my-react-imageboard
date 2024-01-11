@@ -1,0 +1,19 @@
+.close {
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+    fill-rule: evenodd;
+    clip-rule:evenodd;
+    background-color: var(--theme_default_icon);
+    .str0 {
+        stroke: var(--theme_default_postbg);
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 22.9256;
+    }
+}
+
+.btn-close{
+    height: 14px;
+}

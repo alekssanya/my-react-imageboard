@@ -1,0 +1,134 @@
+.home {
+    line-height: 1.3;
+    background-color: var(--theme_default_bg);
+}
+
+.section {
+    background-color: var(--theme_default_altbtnbghover);
+    padding: 16px;
+    border-radius: 4px;
+    list-style: none;
+    max-width: 940px;
+    margin: 0 auto 40px;
+    font-size: 15px;
+}
+
+.home-header {
+    display: table;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    &__logo {
+        height: 200px;
+        width: 200px;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__wr {
+        margin-left: 30px;
+    }
+    &__word {
+        font-size: 30px;
+        color: var(--theme_default_text);
+    }
+}
+
+.home-main {
+    &__links {
+        display: flex;
+        flex-flow: row wrap;
+        
+        &-menu {
+            flex: 1 1 auto;
+            padding: 0 0 0 30px;
+        }
+
+        &-title {
+            padding: 0 0 8px 0;
+            color: var(--theme_default_text);
+        }
+
+        li + &-title {
+            padding-top: 8px;
+        }
+    }
+}
+
+.home-news {
+    &__title {
+        font-size: 1.3rem;
+    }
+
+    &__title {
+        color: var(--theme_default_text);
+        display: table;
+        margin: 0 auto;
+    }
+
+    &__page {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__btn {
+        color: var(--theme_default_link);
+    }
+
+    &__btn:hover {
+        color: var(--theme_default_hover);
+    }
+
+    &__col {
+        width: 438px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    &__news {
+        max-width: 438px;
+    }
+
+    &__link {
+        word-break: break-all;
+        max-width: 438px;
+    }
+}
+
+.home-footer {
+    &__wr {
+        color: var(--theme_default_text);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a {
+            margin: 0 5px;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .home-main {
+        &__links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+        }
+    }
+
+    .home-header {
+        &__logo {
+            height: 150px;
+            width: 150px;
+        }
+        &_wr {
+            margin-left: 20px;
+        }
+        &__word {
+            font-size: 20px;
+        }
+    }
+}

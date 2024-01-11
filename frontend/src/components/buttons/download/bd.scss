@@ -1,0 +1,24 @@
+.download {
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    display: block;
+    background-color: var(--theme_default_icon);
+    .str1 {
+        stroke: #fefefe;
+        stroke-miterlimit: 22.9256;
+        stroke-width: 0.5;
+    }
+    .str0 {
+        stroke: #fefefe;
+        stroke-linecap: round;
+        stroke-width: 1.5;
+        stroke-miterlimit: 22.9256;
+    }
+
+    .fil0 {
+        fill: #fefefe;
+    }
+}

@@ -1,0 +1,44 @@
+.header {
+    padding-bottom: 20px;
+
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    &__menu:first-child {
+        border-bottom: 1px solid var(--theme_default_postbg);
+    }
+
+    a {
+        padding: 5px;
+    }
+
+    &__color-selector {
+        border: 1px solid var(--theme_default_btnborder);
+        background-color: var(--theme_default_altbtnbg);
+        transition: background-color 0.2s ease;
+        color: var(--theme_default_inputtext);
+        outline: medium none;
+    }
+
+    &__message-window {
+        margin: 0 auto;
+        text-align: center;
+        color: var(--theme_default_link);
+
+        &-title {
+            line-height: 2;
+            font-size: 2.4em;
+        }
+
+        &-btn {
+            cursor: pointer;
+            font-size: 1.2em;
+            line-height: 2;
+            color: var(--theme_default_link);
+        }
+    }
+}

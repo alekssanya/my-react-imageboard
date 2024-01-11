@@ -1,0 +1,86 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5435:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+  
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@mymail.ru
+      PGADMIN_DEFAULT_PASSWORD: adminpassword
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - 90:80
+    networks:
+      - postgres
+    restart: unless-stopped
+
+  backend:
+    container_name: backend_container
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 7005:7000
+    networks:
+      - postgres
+      - node-network
+    restart: unless-stopped
+    depends_on:
+      - postgres
+
+  frontend:
+    container_name: frontend_container
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:80
+    networks:
+      - node-network
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  nginx:
+    build: 
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: nginx
+    restart: unless-stopped
+    tty: true
+    ports: 
+      - "8000:80"
+    networks: 
+      - node-network
+    depends_on:
+       - backend
+       - frontend
+
+networks:
+  postgres:
+    driver: bridge
+  node-network:
+    driver: bridge
+
+volumes:
+    postgres:
+    pgadmin:
+    backend:
+    frontend:

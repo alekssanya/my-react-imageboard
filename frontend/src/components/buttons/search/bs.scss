@@ -1,0 +1,30 @@
+.search {
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    display: block;
+    .str0 {
+        stroke: #fefefe;
+        stroke-miterlimit: 22.9256;
+    }
+    .str1 {
+        stroke: #fefefe;
+        stroke-width: 2;
+        stroke-miterlimit: 22.9256;
+    }
+    .fil1 {
+        fill: none;
+    }
+    .fil0 {
+        fill: var(--theme_default_icon);
+    }
+}
+
+.btn-search-wr{
+    position: relative;
+    display: inline-block;
+    margin-right: 4px;
+    height: 14px;
+}

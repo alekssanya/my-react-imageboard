@@ -1,0 +1,35 @@
+.reply-post {
+    background-color: var(--theme_default_postbg);
+    border: 1px solid grey;
+    z-index: 1000;
+    border-radius: 3px;
+    max-width: 1024px;
+    margin: 0px;
+    padding-right: 10px;
+    position: absolute;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 5px;
+        color: var(--theme_default_alttext);
+        padding-top: 6px;
+    }
+
+    &__btns {
+        button {
+            padding: 0;
+        }
+        margin-left: 5px;
+    }
+    animation: showReply 0.3s;
+}
+
+@keyframes showReply {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

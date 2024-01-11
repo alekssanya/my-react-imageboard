@@ -1,0 +1,43 @@
+.scroll-page-btn {
+    position: fixed;
+    height: 40px;
+    right: 20px;
+    padding: 12px;
+    background: var(--theme_default_altbtnbg);
+    z-index: 1111111;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.scroll-page-btn:hover {
+    .path {
+        fill: var(--theme_default_hover);
+    }
+}
+
+.first{
+    top: 40px;
+    transform: rotate(180deg);
+}
+
+.second {
+    bottom: 40px;
+}
+
+.spb-svg {
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    .path {
+        fill: var(--theme_default_text);
+        fill-rule: nonzero;
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll-page-btn{
+        display: none;
+    }
+}

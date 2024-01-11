@@ -1,0 +1,23 @@
+.oppost{
+    &__header{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px 0;
+        color: var(--theme_default_alttext);
+    }
+
+    &__btns{
+        display: flex;
+    }
+
+    &__btns-wr {
+        button + button {
+            margin-left: 3px;
+        }
+    }
+
+    &__btns-wr + &__btns-wr{
+        margin-left: 10px;
+    }
+}

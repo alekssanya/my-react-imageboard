@@ -1,0 +1,44 @@
+.movable-message-window {
+    background: var(--theme_default_postbg);
+    border: solid 1px var(--theme_default_border);
+    padding: 2px;
+    z-index: 980;
+    min-width: 370px;
+
+    &__header {
+        cursor: move;
+        position: relative;
+        text-align: center;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Chrome/Safari/Opera */
+        -khtml-user-select: none; /* Konqueror */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+        background: var(--theme_default_spoiler);
+    }
+
+    &__closebtn {
+        z-index: 100;
+        position: absolute;
+        right: 0;
+        top: 2px;
+        .str0 {
+            stroke: var(--theme_default_text);
+            stroke-width: 2;
+            stroke-miterlimit: 22.9256;
+        }
+        .fil1 {
+            fill: none;
+        }
+        .fil0 {
+            fill: var(--theme_default_spoiler);
+        }
+        shape-rendering: geometricPrecision;
+        text-rendering: geometricPrecision;
+        image-rendering: optimizeQuality;
+        fill-rule: evenodd;
+        clip-rule: evenodd;
+    }
+}
