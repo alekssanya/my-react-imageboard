@@ -1,0 +1,21 @@
+.mv {
+    z-index: 10000;
+    position: fixed;
+    padding: 8px 8px;
+    background-color: var(--theme_mpborder);
+
+    &__title {
+        user-select: none;
+        text-align: center;
+        color: var(--theme_default_drag);
+        cursor: move;
+        font-size: 0.9em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+#image {
+    pointer-events: none;
+    user-select: none;
+}

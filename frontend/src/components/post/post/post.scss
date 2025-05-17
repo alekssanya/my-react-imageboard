@@ -1,0 +1,33 @@
+.post {
+    display: table;
+    background-color: var(--theme_default_postbg);
+    border: 1px solid var(--theme_default_border);
+    border-radius: 3px;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 5px;
+
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 15px 10px 5px;
+        color: var(--theme_default_alttext);
+        padding-top: 6px;
+    }
+
+    &__btns{
+        margin-left: 5px;
+    }
+}
+
+.post:before {
+    content: "...";
+    position: absolute;
+    top: -14px;
+    left: -30px;
+    color: #8c8c8c;
+    color: var(--theme_default_icon);
+    z-index: 10;
+    font-size: 30px;
+}

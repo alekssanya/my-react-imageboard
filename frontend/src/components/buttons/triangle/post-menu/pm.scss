@@ -1,0 +1,21 @@
+.post-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--theme_default_postbg);
+    border: 1px solid var(--theme_default_border);
+    z-index: 1000;
+    &__btn {
+        text-align: left;
+        padding: 3px 10px;
+        font-size: 13px;
+        color: inherit;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+    &__btn:hover {
+        color: white;
+        background: #666;
+    }
+}

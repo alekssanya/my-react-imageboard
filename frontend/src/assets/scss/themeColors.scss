@@ -1,0 +1,74 @@
+:root[theme_data='gurochan'] {
+    --theme_default_bg: #EDDAD2;
+    --theme_default_postbg: #D9AF9E;
+    --theme_default_postbghighlight: #EEDACB;
+    --theme_default_spectext: #800080;
+    --theme_default_postnum: #AF0A0F;
+    --theme_default_border: #CA927B;
+    --theme_default_text: #000000;
+    --theme_default_alttext: #333;
+    --theme_default_link: #34345C;
+    --theme_default_hover: #DD0000;
+    --theme_default_title: #0F0C5D;
+    --theme_default_drag: #CA927B;
+    --theme_default_spoiler: #CA927B;
+    --theme_default_icon: #945d47;
+    --theme_default_btntext: #333;
+    --theme_default_btnbg: #E6CBC0;
+    --theme_default_btnborder: #CA927B;
+    --theme_default_altbtnbg: #E6CBC0;
+    --theme_default_btnbghover: #f1d5c9;
+    --theme_default_altbtnbghover: #f1d5c9;
+    --theme_default_inputtext: #000000;
+}
+
+:root[theme_data='neutron'] {
+    --theme_default_title: #3941AC;
+    --theme_default_bg: #212121;
+    --theme_default_border: #383838;
+    --theme_default_text: #698CC0;
+    --theme_default_postbg: #2C2C2C;
+    --theme_default_postbghighlight: #111110;
+    --theme_default_alttext: #8796ad;
+    --theme_default_link: #C9BE89;
+    --theme_default_hover: #EEFEBB;
+    --theme_default_spoiler: #171717;
+    --theme_default_altbtnbg: #111111;
+    --theme_default_altbtnbghover: #111111;
+    --theme_default_drag: #848484;
+    --theme_default_btnbg: #333;
+    --theme_default_btnborder: #44453D;
+    --theme_default_btnbghover: #CACACA;
+    --theme_default_inputtext: #fff;
+    --theme_default_btntext: #aaa;
+}
+
+:root {
+    --theme_default_bg: #EEE;
+    --theme_default_postbg: #DDD;
+    --theme_default_postbghighlight: #EEDACB;
+    --theme_default_spectext: #800080;
+    --theme_default_postnum: #789922;
+    --theme_default_border: #d2d2d266;
+    --theme_default_text: #333;
+    --theme_default_alttext: #5d5d5d;
+    --theme_default_link: #FF6600;
+    --theme_default_hover: #a74300;
+    --theme_default_title: #004A99;
+    --theme_default_drag: #ccc;
+    --theme_default_spoiler: #BBB;
+    --theme_default_icon: #9e9e9e;
+    --theme_default_btntext: #333;
+    --theme_default_btnbg: #EAEAEA;
+    --theme_default_btnborder: #e0e0e0;
+    --theme_default_altbtnbg: #f5f5f5;
+    --theme_default_btnbghover: #CACACA;
+    --theme_default_altbtnbghover: #fff;
+    --theme_default_inputtext: #333;
+    --theme_nmswitch: #9e9e9e;
+    --theme_mpborder: rgb(85, 85, 85);
+    --theme_mubtn: #cccccc;
+    --theme_sbthumb: #ddd;
+    --theme_sbtrack: #EEE;
+}
+

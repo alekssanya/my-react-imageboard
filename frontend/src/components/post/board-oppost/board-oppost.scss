@@ -1,0 +1,33 @@
+.board-oppost {
+    height: 100%;
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px 0;
+        color: var(--theme_default_alttext);
+    }
+
+    .triangle {
+        margin-left: 3px;
+    }
+    &__btns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__btns-wr {
+        margin-left: 10px;
+    }
+
+    &__body {
+        overflow: inherit;
+        max-height: none;
+        margin: 16px 36px;
+    }
+
+    &__footer {
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+}

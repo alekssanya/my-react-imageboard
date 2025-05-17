@@ -1,0 +1,87 @@
+.message-window {
+    width: 450px;
+    font-size: 0.9em;
+    text-align: left;
+    color: var(--theme_default_text);
+    margin: 0 auto;
+    &__header {
+        display: flex;
+        align-items: center;
+        margin: 2px 0;
+
+        &-input {
+            flex: 1 1 auto;
+            -webkit-flex: 1 1 auto;
+            margin-right: 2px;
+            width: 100%;
+        }
+    }
+
+    &__filer {
+        &-input {
+            display: none;
+        }
+
+        &-drag-area {
+            text-align: center;
+            height: 50px;
+            border: 2px dashed var(--theme_default_drag);
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 9px;
+            color: var(--theme_default_drag);
+            cursor: pointer;
+        }
+    }
+
+    &__text-form {
+        position: relative;
+        width: 100%;
+
+        &-len {
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Chrome/Safari/Opera */
+            -khtml-user-select: none; /* Konqueror */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+        }
+
+        &-input {
+            width: 100%;
+        }
+    }
+
+    &__text-btns {
+        margin: 2px 0;
+        display: flex;
+    }
+
+    &__text-btn {
+        height: 25px;
+        min-width: 25px;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 2px 6px;
+        background-color: var(--theme_mubtn);
+        color: var(--theme_default_text);
+        border: none;
+        margin-right: 2px;
+        outline: none;
+    }
+
+    &__capture {
+        display: flex;
+        align-items: center;
+
+        &-input {
+            flex: 1 1 auto;
+            padding: 10px;
+        }
+    }
+}

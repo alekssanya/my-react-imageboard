@@ -1,0 +1,18 @@
+.hide {
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    .str0 {
+        stroke: #fefefe;
+        stroke-miterlimit: 22.9256;
+        stroke-width: 2;
+    }
+    .fil0 {
+        fill: var(--theme_default_icon);
+    }
+    .fil1 {
+        fill: #fefefe;
+    }
+}

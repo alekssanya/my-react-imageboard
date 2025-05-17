@@ -1,0 +1,24 @@
+.favorite {
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    .str0 {
+        stroke: #fefefe;
+        stroke-width: 0.26;
+        stroke-miterlimit: 22.9256;
+    }
+    .fil0 {
+        fill: var(--theme_default_icon);
+    }
+    .fil1 {
+        fill: #fefefe;
+    }
+
+    &--active {
+        .fil0{
+            fill: var(--theme_default_link);
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/635.d1a820ca.chunk.css","mappings":"AAAA,UAEI,WADA,eACA","sources":["views/404/notfound.scss"],"sourcesContent":[".NotFound {\n    font-size: 222px;\n    color: black;\n}"],"names":[],"sourceRoot":""}
